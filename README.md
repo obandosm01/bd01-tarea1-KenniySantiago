@@ -1,4 +1,4 @@
-# Tarea Programada 1 - Bases de Datos 1 | 2 Semestre 2026
+# Tarea Programada 1 
 
 **Curso:** Bases de Datos I
 
