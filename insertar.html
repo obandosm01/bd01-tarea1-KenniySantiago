@@ -2,20 +2,29 @@
 <html>
 <head>
      <title>Tarea Programada 1</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
-     <header Class = "barra-superior">
-         <h1 Class = "logo"> Tarea Programada 1</h1>
+     <header Class = "px-2 pt-2">
+         <h1 Class = "h1 text-center"> Tarea Programada 1</h1>
      </header>
-     <main class = "contenedor">
-         <a href="index.html"><button>Volver</button></a>
-           <h2 Class = "titulo-pagina"> Insertar Empleado</h2>
-           <label for = "Nombre: "> Nombre </label>
-                 <input type = "text" id placeholder = "Maria">
-           <label for = "Salario: "> Salario </label>
-                 <input type = "number" placeholder = "100000">
-           <button type="submit" class="boton"> Insertar</button>
-           <button type="submit" class="boton"> ← Regresar</button>
+     <hr>
+     <a href="index.html"><button class="btn btn-danger ms-5"><img src="assets/back.svg">&nbsp;Volver</button></a>
+     <hr>
+     <main class = "px-4 d-flex align-items-center flex-column">
+
+         <h3> Insertar Empleado</h3>
+         <form class="my-2 mx-5 mb-5 d-flex flex-column w-25">
+            <label class="form-label text-start" for="nombre">Nombre:</label>
+            <input class="form-control mb-3" name="nombre" type = "text" id placeholder = "Maria">
+            <label class="form-label" for = "salario">Salario:</label>
+            <input class="form-control mb-3" name="salario" type = "text" placeholder = "100000.00">
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success w-25"> Insertar</button>
+            </div>
+         </form>
      </main>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
