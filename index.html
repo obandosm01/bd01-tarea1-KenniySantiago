@@ -2,18 +2,37 @@
 <html>
 <head>
      <title>Tarea Programada 1</title>
-
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-     <header Class = "barra-superior">
-         <h1 Class = "logo"> Tarea Programada 1</h1>
+     <header Class = "px-2 pt-2">
+         <h1 Class = "h1 text-center"> Tarea Programada 1</h1>
      </header>
-     <main class = "contenedor">
-           <h2 Class = "titulo-pagina"> Lista de Empleados</h2>
-           <div id = "Lista de Empleados">
-                <p> Cargando empleados </p>
+     <hr>
+     <main class = "px-4 d-flex flex-column align-items-center">
+           <h3 class="">Lista de Empleados</h3>
+           <div class="my-2 mx-5 w-50">
+               <table class="table table-bordered">
+                   <thead class="table-active">
+                       <th>Nombre</th>
+                       <th>Salario</th>
+                   </thead>
+                   <tbody id="body-tabla">
+                       <tr>
+                           <td>Juanito</td>
+                           <td>350.00</td>
+                       </tr>
+                   </tbody>
+               </table>
            </div>
-           <a href="insertar.html"><button type="submit" class="boton">Insertar Empleado</button></a>
      </main>
+     <hr>
+     <div class="d-flex w-100 justify-content-center">
+         <a href="insertar.html"><button class="btn btn-primary"><img src="assets/add.svg">&nbsp;Insertar Empleado</button></a>
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>
