@@ -12,6 +12,6 @@
 
 | Carnet      | Nombre completo                   | 
 |-------------|-----------------------------------|
-|    | Santiago            |
+| 2025108098  | Santiago Obando Morales           |
 | 2024201088  | Kenni González Blandón            |
 
