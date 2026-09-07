@@ -19,7 +19,18 @@ function consultar() {
                 tbody.appendChild(fila);
             });
         })
-        .catch((err) => console.error("Error: ", err));
+      .then(() => {
+        tabla.classList.remove('d-none');
+        document.getElementById('spinner').classList.add('d-none');
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error al consultar empleados',
+          text: err.message,
+          confirmButtonText: 'Aceptar'
+        });
+      });
 }
 
 document.addEventListener("DOMContentLoaded", consultar);

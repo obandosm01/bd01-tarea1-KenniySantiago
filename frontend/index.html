@@ -11,8 +11,12 @@
      <hr>
      <main class = "px-4 d-flex flex-column align-items-center">
            <h3 class="">Lista de Empleados</h3>
-           <div class="my-2 mx-5 w-50">
-               <table class="table table-bordered">
+           <div class="my-2 mx-5 w-50 d-flex justify-content-center">
+               <div id="spinner" class="spinner-border" role="status">
+                 <span class="visually-hidden">Cargando...</span>
+               </div>
+
+               <table class="table table-bordered d-none" id="tabla">
                    <thead class="table-active">
                        <th>Nombre</th>
                        <th>Salario</th>
@@ -30,7 +34,8 @@
          <a href="insertar.html"><button class="btn btn-primary"><img src="assets/add.svg">&nbsp;Insertar Empleado</button></a>
 
      </div>
-        <script src="consultar.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="consultar.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 

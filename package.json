@@ -5,6 +5,7 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "mssql": "^12.7.0"
+    "mssql": "^12.7.0",
+    "sweetalert2": "^11.26.25"
   }
 }
